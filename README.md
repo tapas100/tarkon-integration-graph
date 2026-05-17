@@ -62,7 +62,7 @@ tests/
   test_contract_validator.py
 docs/
 Dockerfile
-docker-compose.yml   # includes Neo4j
+podman-compose.yml   # includes Neo4j
 ```
 
 ---
@@ -70,7 +70,7 @@ docker-compose.yml   # includes Neo4j
 ## Quick Start
 
 ```bash
-docker-compose up -d neo4j
+podman-compose up -d neo4j
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn src.api:app --reload --port 9021
